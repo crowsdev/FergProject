@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props"
+            Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')"/>
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{3585C8AA-7072-4438-B0E2-AF1CF6E9F261}</ProjectGuid>
+        <OutputType>Exe</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>FergProject</RootNamespace>
+        <AssemblyName>FergProject</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System"/>
+        <Reference Include="System.Core"/>
+        <Reference Include="System.Data"/>
+        <Reference Include="System.Xml"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Program.cs"/>
+        <Compile Include="Properties\AssemblyInfo.cs"/>
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="reference_libs\0Harmony.dll" />
+      <Content Include="reference_libs\Accessibility.dll" />
+      <Content Include="reference_libs\AmplifyShaderEditor.Samples.BuiltIn.dll" />
+      <Content Include="reference_libs\Antlr3.Runtime.dll" />
+      <Content Include="reference_libs\Assembly-CSharp-firstpass.dll" />
+      <Content Include="reference_libs\Assembly-CSharp.dll" />
+      <Content Include="reference_libs\AstarPathfindingProject.dll" />
+      <Content Include="reference_libs\Backtrace.Unity.dll" />
+      <Content Include="reference_libs\BhvrAnalytics.dll" />
+      <Content Include="reference_libs\BhvrAnalyticsMS.dll" />
+      <Content Include="reference_libs\com.rlabrecque.steamworks.net.dll" />
+      <Content Include="reference_libs\com.thenakeddev.dlss.Runtime.dll" />
+      <Content Include="reference_libs\com.thenakeddev.fsr.Runtime.BIRP.dll" />
+      <Content Include="reference_libs\com.thenakeddev.fsr.Runtime.dll" />
+      <Content Include="reference_libs\Discord.Sdk.dll" />
+      <Content Include="reference_libs\enum2int.dll" />
+      <Content Include="reference_libs\EOS.dll" />
+      <Content Include="reference_libs\HBAO.Demo.Runtime.dll" />
+      <Content Include="reference_libs\HBAO.Runtime.dll" />
+      <Content Include="reference_libs\InControl.dll" />
+      <Content Include="reference_libs\InControl.Examples.dll" />
+      <Content Include="reference_libs\LiteNetLib.dll" />
+      <Content Include="reference_libs\LogLibrary.dll" />
+      <Content Include="reference_libs\MemoryPack.dll" />
+      <Content Include="reference_libs\Microsoft.Bcl.AsyncInterfaces.dll" />
+      <Content Include="reference_libs\Mono.Cecil.dll" />
+      <Content Include="reference_libs\Mono.Cecil.Mdb.dll" />
+      <Content Include="reference_libs\Mono.Cecil.Pdb.dll" />
+      <Content Include="reference_libs\Mono.Cecil.Rocks.dll" />
+      <Content Include="reference_libs\Mono.Posix.dll" />
+      <Content Include="reference_libs\Mono.Security.dll" />
+      <Content Include="reference_libs\Mono.WebBrowser.dll" />
+      <Content Include="reference_libs\MonoMod.Backports.dll" />
+      <Content Include="reference_libs\MonoMod.Core.dll" />
+      <Content Include="reference_libs\MonoMod.Iced.dll" />
+      <Content Include="reference_libs\MonoMod.ILHelpers.dll" />
+      <Content Include="reference_libs\MonoMod.RuntimeDetour.dll" />
+      <Content Include="reference_libs\MonoMod.Utils.dll" />
+      <Content Include="reference_libs\mscorlib.dll" />
+      <Content Include="reference_libs\NCalc.dll" />
+      <Content Include="reference_libs\netstandard.dll" />
+      <Content Include="reference_libs\Newtonsoft.Json.dll" />
+      <Content Include="reference_libs\NGUI.dll" />
+      <Content Include="reference_libs\Noemax.GZip.dll" />
+      <Content Include="reference_libs\Pathfinding.ClipperLib.dll" />
+      <Content Include="reference_libs\Pathfinding.Ionic.Zip.Reduced.dll" />
+      <Content Include="reference_libs\Pathfinding.Poly2Tri.dll" />
+      <Content Include="reference_libs\Polly.Core.dll" />
+      <Content Include="reference_libs\Polly.dll" />
+      <Content Include="reference_libs\ScreenSpaceReflections.dll" />
+      <Content Include="reference_libs\SpaceWizards_HttpListener.dll" />
+      <Content Include="reference_libs\System.ComponentModel.Composition.dll" />
+      <Content Include="reference_libs\System.ComponentModel.DataAnnotations.dll" />
+      <Content Include="reference_libs\System.Configuration.dll" />
+      <Content Include="reference_libs\System.Configuration.Install.dll" />
+      <Content Include="reference_libs\System.Core.dll" />
+      <Content Include="reference_libs\System.Data.DataSetExtensions.dll" />
+      <Content Include="reference_libs\System.Data.dll" />
+      <Content Include="reference_libs\System.dll" />
+      <Content Include="reference_libs\System.Drawing.dll" />
+      <Content Include="reference_libs\System.EnterpriseServices.dll" />
+      <Content Include="reference_libs\System.IO.Compression.dll" />
+      <Content Include="reference_libs\System.IO.Compression.FileSystem.dll" />
+      <Content Include="reference_libs\System.Net.Http.dll" />
+      <Content Include="reference_libs\System.Numerics.dll" />
+      <Content Include="reference_libs\System.Runtime.CompilerServices.Unsafe.dll" />
+      <Content Include="reference_libs\System.Runtime.dll" />
+      <Content Include="reference_libs\System.Runtime.Serialization.dll" />
+      <Content Include="reference_libs\System.Security.dll" />
+      <Content Include="reference_libs\System.ServiceModel.Internals.dll" />
+      <Content Include="reference_libs\System.ServiceProcess.dll" />
+      <Content Include="reference_libs\System.Threading.Tasks.Extensions.dll" />
+      <Content Include="reference_libs\System.Transactions.dll" />
+      <Content Include="reference_libs\System.ValueTuple.dll" />
+      <Content Include="reference_libs\System.Windows.Forms.dll" />
+      <Content Include="reference_libs\System.Xml.dll" />
+      <Content Include="reference_libs\System.Xml.Linq.dll" />
+      <Content Include="reference_libs\Unity.Addressables.dll" />
+      <Content Include="reference_libs\Unity.Animation.Rigging.dll" />
+      <Content Include="reference_libs\Unity.Animation.Rigging.DocCodeExamples.dll" />
+      <Content Include="reference_libs\Unity.Burst.dll" />
+      <Content Include="reference_libs\Unity.Burst.Unsafe.dll" />
+      <Content Include="reference_libs\Unity.Collections.dll" />
+      <Content Include="reference_libs\Unity.Collections.LowLevel.ILSupport.dll" />
+      <Content Include="reference_libs\Unity.Mathematics.dll" />
+      <Content Include="reference_libs\Unity.MemoryProfiler.dll" />
+      <Content Include="reference_libs\Unity.Microsoft.GDK.dll" />
+      <Content Include="reference_libs\Unity.Microsoft.GDK.Tools.dll" />
+      <Content Include="reference_libs\Unity.Postprocessing.Runtime.dll" />
+      <Content Include="reference_libs\Unity.Profiling.Core.dll" />
+      <Content Include="reference_libs\Unity.ResourceManager.dll" />
+      <Content Include="reference_libs\Unity.ScriptableBuildPipeline.dll" />
+      <Content Include="reference_libs\Unity.TerrainTools.dll" />
+      <Content Include="reference_libs\Unity.TextMeshPro.dll" />
+      <Content Include="reference_libs\UnityEngine.AccessibilityModule.dll" />
+      <Content Include="reference_libs\UnityEngine.AIModule.dll" />
+      <Content Include="reference_libs\UnityEngine.AndroidJNIModule.dll" />
+      <Content Include="reference_libs\UnityEngine.AnimationModule.dll" />
+      <Content Include="reference_libs\UnityEngine.ARModule.dll" />
+      <Content Include="reference_libs\UnityEngine.AssetBundleModule.dll" />
+      <Content Include="reference_libs\UnityEngine.AudioModule.dll" />
+      <Content Include="reference_libs\UnityEngine.ClothModule.dll" />
+      <Content Include="reference_libs\UnityEngine.ClusterInputModule.dll" />
+      <Content Include="reference_libs\UnityEngine.ClusterRendererModule.dll" />
+      <Content Include="reference_libs\UnityEngine.ContentLoadModule.dll" />
+      <Content Include="reference_libs\UnityEngine.CoreModule.dll" />
+      <Content Include="reference_libs\UnityEngine.CrashReportingModule.dll" />
+      <Content Include="reference_libs\UnityEngine.DirectorModule.dll" />
+      <Content Include="reference_libs\UnityEngine.dll" />
+      <Content Include="reference_libs\UnityEngine.DSPGraphModule.dll" />
+      <Content Include="reference_libs\UnityEngine.GameCenterModule.dll" />
+      <Content Include="reference_libs\UnityEngine.GIModule.dll" />
+      <Content Include="reference_libs\UnityEngine.GridModule.dll" />
+      <Content Include="reference_libs\UnityEngine.HotReloadModule.dll" />
+      <Content Include="reference_libs\UnityEngine.ImageConversionModule.dll" />
+      <Content Include="reference_libs\UnityEngine.IMGUIModule.dll" />
+      <Content Include="reference_libs\UnityEngine.InputLegacyModule.dll" />
+      <Content Include="reference_libs\UnityEngine.InputModule.dll" />
+      <Content Include="reference_libs\UnityEngine.JSONSerializeModule.dll" />
+      <Content Include="reference_libs\UnityEngine.LocalizationModule.dll" />
+      <Content Include="reference_libs\UnityEngine.NVIDIAModule.dll" />
+      <Content Include="reference_libs\UnityEngine.ParticleSystemModule.dll" />
+      <Content Include="reference_libs\UnityEngine.PerformanceReportingModule.dll" />
+      <Content Include="reference_libs\UnityEngine.Physics2DModule.dll" />
+      <Content Include="reference_libs\UnityEngine.PhysicsModule.dll" />
+      <Content Include="reference_libs\UnityEngine.ProfilerModule.dll" />
+      <Content Include="reference_libs\UnityEngine.PropertiesModule.dll" />
+      <Content Include="reference_libs\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" />
+      <Content Include="reference_libs\UnityEngine.ScreenCaptureModule.dll" />
+      <Content Include="reference_libs\UnityEngine.SharedInternalsModule.dll" />
+      <Content Include="reference_libs\UnityEngine.SpriteMaskModule.dll" />
+      <Content Include="reference_libs\UnityEngine.SpriteShapeModule.dll" />
+      <Content Include="reference_libs\UnityEngine.StreamingModule.dll" />
+      <Content Include="reference_libs\UnityEngine.SubstanceModule.dll" />
+      <Content Include="reference_libs\UnityEngine.SubsystemsModule.dll" />
+      <Content Include="reference_libs\UnityEngine.TerrainModule.dll" />
+      <Content Include="reference_libs\UnityEngine.TerrainPhysicsModule.dll" />
+      <Content Include="reference_libs\UnityEngine.TextCoreFontEngineModule.dll" />
+      <Content Include="reference_libs\UnityEngine.TextCoreTextEngineModule.dll" />
+      <Content Include="reference_libs\UnityEngine.TextRenderingModule.dll" />
+      <Content Include="reference_libs\UnityEngine.TilemapModule.dll" />
+      <Content Include="reference_libs\UnityEngine.TLSModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UI.dll" />
+      <Content Include="reference_libs\UnityEngine.UIElementsModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UIModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UmbraModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UnityAnalyticsCommonModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UnityAnalyticsModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UnityConnectModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UnityCurlModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UnityTestProtocolModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UnityWebRequestAssetBundleModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UnityWebRequestAudioModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UnityWebRequestModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UnityWebRequestTextureModule.dll" />
+      <Content Include="reference_libs\UnityEngine.UnityWebRequestWWWModule.dll" />
+      <Content Include="reference_libs\UnityEngine.VehiclesModule.dll" />
+      <Content Include="reference_libs\UnityEngine.VFXModule.dll" />
+      <Content Include="reference_libs\UnityEngine.VideoModule.dll" />
+      <Content Include="reference_libs\UnityEngine.VirtualTexturingModule.dll" />
+      <Content Include="reference_libs\UnityEngine.VRModule.dll" />
+      <Content Include="reference_libs\UnityEngine.WindModule.dll" />
+      <Content Include="reference_libs\UnityEngine.XRModule.dll" />
+      <Content Include="reference_libs\Utf8Json.dll" />
+      <Content Include="reference_libs\XblPCSandbox.dll" />
+      <Content Include="reference_libs\zxing.unity.dll" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="reference_libs\decompiled\" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
