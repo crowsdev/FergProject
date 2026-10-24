@@ -210,6 +210,9 @@
       <Content Include="reference_libs\Utf8Json.dll" />
       <Content Include="reference_libs\XblPCSandbox.dll" />
       <Content Include="reference_libs\zxing.unity.dll" />
+      <Content Include="Stooq_CSV\chpy_us_d.csv" />
+      <Content Include="Stooq_CSV\maro_us_d.csv" />
+      <Content Include="Stooq_CSV\mrny_us_d.csv" />
     </ItemGroup>
     <ItemGroup>
       <Folder Include="reference_libs\decompiled\" />
